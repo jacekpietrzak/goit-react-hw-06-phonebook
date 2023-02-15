@@ -1,7 +1,7 @@
 {
   "name": "goit-react-hw-06-phonebook",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://jacekpietrzak.github.io/goit-react-hw-06-phonebook/",
   "dependencies": {
     "@redux-devtools/extension": "^3.2.5",
