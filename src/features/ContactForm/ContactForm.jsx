@@ -16,24 +16,6 @@ const ContactForm = () => {
     handleAddContact();
   };
 
-  // const addContact = contact => {
-  //   const newContact = {
-  //     id: nanoid(),
-  //     name: contact.name,
-  //     number: contact.number,
-  //   };
-
-  //   const checkName = contacts.find(
-  //     contact => contact.name === newContact.name
-  //   );
-
-  //   if (checkName !== undefined) {
-  //     return alert(`${checkName.name} is already in contacts.`);
-  //   }
-
-  //   setContacts([newContact, ...contacts]);
-  // };
-
   const handleAddContact = () => {
     const contactName = inputNameRef.current.value;
     const contactNumber = inputNumberRef.current.value;
