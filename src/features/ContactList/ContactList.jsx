@@ -8,10 +8,10 @@ import Contact from '../Contact/Contact';
 const ContactList = () => {
   const contacts = useSelector(selectContacts);
 
-  const filterObject = useSelector(selectFilter);
-  const filter = filterObject.status;
+  const filter = useSelector(selectFilter);
+  const filterStatus = filter.status;
   const filteredContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(filter)
+    contact.name.toLowerCase().includes(filterStatus)
   );
 
   return (

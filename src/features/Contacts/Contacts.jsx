@@ -11,8 +11,7 @@ export function Contacts() {
   const contacts = useSelector(selectContacts);
 
   useEffect(() => {
-    const localStorageContacts = contacts;
-    localStorage.setItem('contacts', JSON.stringify(localStorageContacts));
+    localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
 
   return (
